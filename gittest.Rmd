@@ -1,0 +1,28 @@
+---
+title: "Gittest"
+author: "Claire Madden"
+date: "11/12/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+
+```{r}
+library(tidyverse)
+
+
+iris_hist <- ggplot(iris, aes(x = Petal.Length))+
+  geom_histogram()+
+  facet_wrap(~Species, scale = "free")
+
+
+
+iris_hist
+
+```
+
